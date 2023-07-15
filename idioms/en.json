@@ -4,5 +4,10 @@
         "blog": "Blog",
         "contact": "Contact",
         "idiom": "ES"
+    },
+    "hero": {
+        "title": "Hello, i'm Ulysses316",
+        "subtitle": "FullStack Web Developer",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dicta, amet eligendi quo quod atque officiis praesentium nihil tempora aliquid saepe ullam magnam fugiat blanditiis vitae aut earum nesciunt. Necessitatibus."
     }
 }
