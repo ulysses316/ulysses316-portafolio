@@ -3,11 +3,20 @@
         "portafolio" : "Portafolio",
         "blog": "Blog",
         "contact": "Contacto",
-        "idiom": "EN"
+        "idiom": "en"
     },
     "hero": {
         "title": "Hola, Soy Ulysses316",
         "subtitle": "Desarrollador Web FullStack",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dicta, amet eligendi quo quod atque officiis praesentium nihil tempora aliquid saepe ullam magnam fugiat blanditiis vitae aut earum nesciunt. Necessitatibus."
+    },
+    "footer": {
+        "title": "Contactame",
+        "text": "¿Tienes una fecha límite a la vista? Programe una llamada conmigo para discutir con más detalle. Alternativamente, conéctese conmigo en otro lugar de la web.",
+        "social": {
+            "linkedin" : "https://www.linkedin.com/in/ulysses316/",
+            "github": "https://github.com/ulysses316",
+            "email": "mailto:ulises316@live.com.mx"
+        }
     }
 }

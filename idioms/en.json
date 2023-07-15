@@ -3,11 +3,20 @@
         "portafolio" : "Portafolio",
         "blog": "Blog",
         "contact": "Contact",
-        "idiom": "ES"
+        "idiom": "es"
     },
     "hero": {
         "title": "Hello, i'm Ulysses316",
         "subtitle": "FullStack Web Developer",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dicta, amet eligendi quo quod atque officiis praesentium nihil tempora aliquid saepe ullam magnam fugiat blanditiis vitae aut earum nesciunt. Necessitatibus."
+    },
+    "footer": {
+        "title": "Let's Chat",
+        "text": "Have you got a deadline looming? Schedule a call with me to discuss in more detail. Alternatively connect with me elsewhere on the web.",
+        "social": {
+            "linkedin" : "https://www.linkedin.com/in/ulysses316/",
+            "github": "https://github.com/ulysses316",
+            "email": "mailto:ulises316@live.com.mx"
+        }
     }
 }

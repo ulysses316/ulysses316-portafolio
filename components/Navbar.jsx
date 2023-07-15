@@ -38,7 +38,10 @@ export default function Navbar() {
                     <a href="#" className="text-sm font-semibold leading-6">
                         {idiom.navbar.contact}
                     </a>
-                    <p onClick={handdleIdiom} className="text-sm font-semibold leading-6 cursor-pointer">
+                    <a href="#" className="text-sm font-semibold leading-6 uppercase">
+                        cv
+                    </a>
+                    <p onClick={handdleIdiom} className="text-sm font-semibold leading-6 cursor-pointer uppercase">
                         {idiom.navbar.idiom}
                     </p>
                 </Popover.Group>
@@ -90,7 +93,13 @@ export default function Navbar() {
                                 >
                                     {idiom.navbar.contact}
                                 </a>
-                                <p onClick={handdleIdiom} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 cursor-pointer">
+                                <a
+                                    href="#"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 uppercase"
+                                >
+                                    cv
+                                </a>
+                                <p onClick={handdleIdiom} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 cursor-pointer uppercase">
                                     {idiom.navbar.idiom}
                                 </p>
                             </div>
