@@ -1,0 +1,8 @@
+{
+    "navbar" : {
+        "portafolio" : "Portafolio",
+        "blog": "Blog",
+        "contact": "Contact",
+        "idiom": "ES"
+    }
+}

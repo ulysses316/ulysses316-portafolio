@@ -12,7 +12,22 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        primary: {
+          light: '#f5f4f1',
+          dark: '#303030',
+          red: '#ff5277',
+          purple: '#7f5af0',
+        },
+      },
     },
   },
-  plugins: [],
+  variants: {
+    extend: {
+      textColor: ['dark', 'dark-hover', 'dark-group-hover', 'dark-even', 'dark-odd'],
+      backgroundColor: ['dark', 'dark-hover', 'dark-group-hover', 'dark-even', 'dark-odd'],
+    }
+  },
+  plugins: [require('tailwindcss-dark-mode')(),],
+  darkMode: 'class',
 }
