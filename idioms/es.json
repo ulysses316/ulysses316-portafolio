@@ -22,7 +22,9 @@
         "social": {
             "linkedin" : "https://www.linkedin.com/in/ulysses316/",
             "github": "https://github.com/ulysses316",
-            "email": "mailto:ulises316@live.com.mx"
+            "email": "mailto:ulises316@live.com.mx", 
+            "fork": "https://podcasters.spotify.com/pod/show/el-fork",
+            "junior": "https://podcasters.spotify.com/pod/show/un-podcast-junior"
         }
     }
 }

@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useState, useEffect } from 'react'
 import { LanguageContext } from './context/LanguageContext'
 import CardRepos from './common/CardRepos'
 import Link from 'next/link'
@@ -8,6 +8,7 @@ import useFetch from '@/hooks/useFetch'
 
 export default function ReposSection() {
 
+  const [loading, setLoading] = useState(true);
   const { idiom } = useContext(LanguageContext)
   
   const repos = [
@@ -20,15 +21,30 @@ export default function ReposSection() {
   const response = repos.map((url)=>{
     return useFetch(url)
   })
+
+  useEffect(() => {
+    if (response.every((repo) => repo.data)) {
+      setLoading(false);
+    }
+  }, [response]);
   
   return (
     <section>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-12'>
-        {(response && (
-          response.map((repo, index)=>(
-            <CardRepos key={index} title={repo.data.name} description={repo.data.description} html_url={repo.data.html_url}/>
+      {loading ? (
+          <p>Loading...</p>
+        ) : (
+          response.map((repo) => (
+            <CardRepos
+              key={repo.data.id}
+              title={repo.data.name}
+              description={repo.data.description}
+              url={repo.data.html_url}
+              language={repo.data.language}
+              stars={repo.data.stargazers_count}
+            />
           ))
-        ))}
+        )}
       </div>
       <div className='flex justify-end'>
         <Link className='text-primary-red dark:text-primary-purple font-bold text-lg' href={"#"}>{idiom.repoSection.cta}</Link>
