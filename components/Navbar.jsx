@@ -29,15 +29,15 @@ export default function Navbar() {
                     </button>
                 </div>
                 <Popover.Group className="hidden lg:flex lg:gap-x-12">
-                    <Link href="/prueba" className="text-sm font-semibold leading-6">
+                    {/* <Link href="/prueba" className="text-sm font-semibold leading-6">
                         {idiom.navbar.portafolio}
-                    </Link>
-                    <a href="#" className="text-sm font-semibold leading-6">
+                    </Link> */}
+                    {/* <a href="#" className="text-sm font-semibold leading-6">
                         {idiom.navbar.blog}
-                    </a>
-                    <a href="#" className="text-sm font-semibold leading-6">
+                    </a> */}
+                    <Link href="/contact" className="text-sm font-semibold leading-6">
                         {idiom.navbar.contact}
-                    </a>
+                    </Link>
                     <a href="#" className="text-sm font-semibold leading-6 uppercase">
                         cv
                     </a>
@@ -71,24 +71,24 @@ export default function Navbar() {
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
-                                <a
+                                {/* <a
                                     href="#"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7"
                                 >
                                     {idiom.navbar.portafolio}
-                                </a>
-                                <a
+                                </a> */}
+                                {/* <a
                                     href="#"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7"
                                 >
                                     {idiom.navbar.blog}
-                                </a>
-                                <a
-                                    href="#"
+                                </a> */}
+                                <Link
+                                    href="/contact"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7"
                                 >
                                     {idiom.navbar.contact}
-                                </a>
+                                </Link>
                                 <a
                                     href="#"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 uppercase"

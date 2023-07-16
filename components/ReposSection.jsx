@@ -45,7 +45,7 @@ export default function ReposSection() {
         )}
       </div>
       <div className='flex justify-end'>
-        <Link className='text-primary-red dark:text-primary-purple font-bold text-lg' href={"#"}>{idiom.repoSection.cta}</Link>
+        <Link className='text-primary-red dark:text-primary-purple font-bold text-lg' href={"https://github.com/ulysses316"}>{idiom.repoSection.cta}</Link>
         <ArrowRightIcon className='text-primary-red dark:text-primary-purple w-6' />
       </div>
     </section>
