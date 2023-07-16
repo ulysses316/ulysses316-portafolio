@@ -10,6 +10,12 @@
         "subtitle": "FullStack Web Developer",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dicta, amet eligendi quo quod atque officiis praesentium nihil tempora aliquid saepe ullam magnam fugiat blanditiis vitae aut earum nesciunt. Necessitatibus."
     },
+    "articleSection": {
+        "cta": "See All Posts"
+    },
+    "repoSection": {
+        "cta": "See All Repos"
+    },
     "footer": {
         "title": "Let's Chat",
         "text": "Have you got a deadline looming? Schedule a call with me to discuss in more detail. Alternatively connect with me elsewhere on the web.",

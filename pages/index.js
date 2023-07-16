@@ -3,27 +3,23 @@ import { Inter } from 'next/font/google'
 import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import MainLayout from '@/components/common/MainLayout'
 
-import CardArtitle from '@/components/common/CardArtitle'
+import ArticlesSection from '@/components/ArticlesSection'
+import ReposSection from '@/components/ReposSection'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <>
-    <Navbar/>
-    <Hero/>
-    
-
-    <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-12'>
-      <CardArtitle/>
-      <CardArtitle/>
-      <CardArtitle/>
-      <CardArtitle/>
-    </div>
-
-
-    <Footer/>
+      <Navbar />
+      <MainLayout>
+        <Hero />
+        <ArticlesSection />
+        <ReposSection/>
+        <Footer />
+      </MainLayout>
     </>
   )
 }

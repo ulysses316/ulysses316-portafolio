@@ -9,7 +9,7 @@ export default function Hero() {
   const { idiom } = useContext(LanguageContext)
 
   return (
-    <div className='px-3 sm:container sm:mx-auto mt-[1em] text-black dark:text-white'>
+    <div className='mt-[1em] text-black dark:text-white'>
       <Card>
         <div className='grid grid-cols-1 lg:grid-cols-[1fr_3fr] gap-6'>
           <div className='justify-self-center self-center'>

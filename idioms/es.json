@@ -10,6 +10,12 @@
         "subtitle": "Desarrollador Web FullStack",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dicta, amet eligendi quo quod atque officiis praesentium nihil tempora aliquid saepe ullam magnam fugiat blanditiis vitae aut earum nesciunt. Necessitatibus."
     },
+    "articleSection": {
+        "cta": "Ver todos los articulos"
+    },
+    "repoSection": {
+        "cta": "Ver todos los repositorios"
+    },
     "footer": {
         "title": "Contactame",
         "text": "¿Tienes una fecha límite a la vista? Programe una llamada conmigo para discutir con más detalle. Alternativamente, conéctese conmigo en otro lugar de la web.",

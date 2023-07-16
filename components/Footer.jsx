@@ -6,7 +6,7 @@ export default function Footer() {
     const { idiom } = useContext(LanguageContext)
 
     return (
-        <footer className='text-black dark:text-white px-3 sm:container sm:mx-auto my-6'>
+        <footer className='text-black dark:text-white my-6'>
             <hr className='my-6' />
             <div className='grid grid-cols-1 md:grid-cols-2 gap-12'>
                 <div>
