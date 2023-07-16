@@ -15,7 +15,8 @@ export default function Home() {
     <Hero/>
     
 
-    <div className='container mx-auto grid grid-cols-3 gap-6 my-12'>
+    <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-12'>
+      <CardArtitle/>
       <CardArtitle/>
       <CardArtitle/>
       <CardArtitle/>

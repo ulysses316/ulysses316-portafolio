@@ -9,7 +9,7 @@ export default function CardArtitle() {
                 <p className='my-[16px]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero cum culpa libero minus nesciunt, incidunt nostrum beatae, odio possimus dicta voluptatem fuga vitae sint provident? Quos praesentium expedita perferendis adipisci!</p>
                 <div>
                     <hr />
-                    <div className='flex items-center gap-2 mt-3'>
+                    <div className='flex items-center gap-2 mt-3 hover:text-primary-red'>
                         <HeartIcon className='w-6' />
                         <span>505</span>
                     </div>
