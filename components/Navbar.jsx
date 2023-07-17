@@ -84,13 +84,13 @@ export default function Navbar() {
                                     {idiom.navbar.blog}
                                 </a> */}
                                 <Link
-                                    href="/contact"
+                                    href="/about"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7"
                                 >
-                                    {idiom.navbar.contact}
+                                    {idiom.navbar.about}
                                 </Link>
                                 <a
-                                    href="#"
+                                    href={idiom.navbar.cv}
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 uppercase"
                                 >
                                     cv
