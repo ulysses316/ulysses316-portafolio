@@ -1,7 +1,6 @@
 import { useContext, useState, useEffect } from 'react'
 import { LanguageContext } from './context/LanguageContext'
 import CardRepos from './common/CardRepos'
-import Link from 'next/link'
 import { ArrowRightIcon } from '@heroicons/react/20/solid'
 
 import useFetch from '@/hooks/useFetch'
@@ -30,7 +29,7 @@ export default function ReposSection() {
 
   return (
     <section>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-12'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-6 gap-10 my-12'>
         {loading ? (
           <p>Loading...</p>
         ) : (
@@ -45,7 +44,7 @@ export default function ReposSection() {
         )}
       </div>
       <div className='flex justify-end'>
-        <Link className='text-primary-red dark:text-primary-purple font-bold text-lg' href={"https://github.com/ulysses316"}>{idiom.repoSection.cta}</Link>
+        <a className='text-primary-red dark:text-primary-purple font-bold text-lg' href={"https://github.com/ulysses316"} target='_blank'>{idiom.repoSection.cta}</a>
         <ArrowRightIcon className='text-primary-red dark:text-primary-purple w-6' />
       </div>
     </section>

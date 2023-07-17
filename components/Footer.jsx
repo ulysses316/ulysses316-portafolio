@@ -15,7 +15,7 @@ export default function Footer() {
                 </div>
                 <div className='grid grid-cols-2 gap-4 md:gap-0'>
                     <div className='self-center'>
-                        <a href={idiom.footer.social.github}>
+                        <a target='_blank' href={idiom.footer.social.github}>
                             <svg
                                 className='inline mr-2 text-3xl'
                                 stroke="currentColor"
@@ -32,7 +32,7 @@ export default function Footer() {
                         </a>
                     </div>
                     <div className='self-center'>
-                        <a href={idiom.footer.social.email}>
+                        <a target='_blank' href={idiom.footer.social.email}>
                             <svg
                                 className='inline mr-2 text-3xl'
                                 stroke="currentColor"
@@ -49,7 +49,7 @@ export default function Footer() {
                         </a>
                     </div>
                     <div className='self-center'>
-                        <a href={idiom.footer.social.linkedin}>
+                        <a target='_blank' href={idiom.footer.social.linkedin}>
                             <svg
                                 className='inline mr-2 text-3xl'
                                 stroke="currentColor"
@@ -67,7 +67,7 @@ export default function Footer() {
                         </a>
                     </div>
                     <div className='self-center'>
-                        <a href={idiom.footer.social.junior}>
+                        <a target='_blank' href={idiom.footer.social.junior}>
                             <svg
                                 className='inline mr-2 text-3xl'
                                 stroke="currentColor"
@@ -85,7 +85,7 @@ export default function Footer() {
                         </a>
                     </div>
                     <div className='self-center'>
-                        <a href={idiom.footer.social.fork}>
+                        <a target='_blank' href={idiom.footer.social.fork}>
                             <svg
                                 className='inline mr-2 text-3xl'
                                 stroke="currentColor"

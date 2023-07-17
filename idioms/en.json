@@ -1,14 +1,15 @@
 {
-    "navbar" : {
-        "portafolio" : "Portafolio",
+    "navbar": {
+        "portafolio": "Portafolio",
         "blog": "Blog",
-        "contact": "Contact",
-        "idiom": "es"
+        "about": "About me",
+        "idiom": "es",
+        "cv": "/cv-eng.pdf"
     },
     "hero": {
         "title": "Hello, i'm Ulysses316",
         "subtitle": "FullStack Web Developer",
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dicta, amet eligendi quo quod atque officiis praesentium nihil tempora aliquid saepe ullam magnam fugiat blanditiis vitae aut earum nesciunt. Necessitatibus."
+        "text": "Web developer | GDG UNAM | Student | Music lover"
     },
     "articleSection": {
         "cta": "See All Posts"
@@ -16,11 +17,26 @@
     "repoSection": {
         "cta": "See All Repos"
     },
+    "about": {
+        "title": "H. Ulises G.M",
+        "subtitle": "FullStack Web Developer",
+        "firstText": "Hello! I am H. Ulises G. M., a Fullstack Web Developer and Web Development Instructor. Since 2019, I have been conducting development workshops for programming communities and companies such as EpicQueen, GDG UNAM, UTOPICODE, Laboratorio de Tecnologías el Rule, Centro Cultural España, Instituto Tecnológico de La Laguna, and Piedras Negras. I graduated with a degree in Computer Engineering from FES ARAGON UNAM.",
+        "secondText": "Regarding my skills, I have experience in Backend development using Python with technologies like Flask and Django. In Frontend, I have a foundation in Angular, and currently, I am studying React and NextJS. Additionally, I lead programming communities where we organize talks for developers.",
+        "thirdText": "If you wish to contact me, below you can find links to all my social media profiles and my email"
+    },
+    "notFound": {
+        "title": "Page not found",
+        "errorCode": 404
+    },
+    "error": {
+        "title": "Internal server error",
+        "errorCode": 500
+    },
     "footer": {
         "title": "Let's Chat",
         "text": "Have you got a deadline looming? Schedule a call with me to discuss in more detail. Alternatively connect with me elsewhere on the web.",
         "social": {
-            "linkedin" : "https://www.linkedin.com/in/ulysses316/",
+            "linkedin": "https://www.linkedin.com/in/ulysses316/",
             "github": "https://github.com/ulysses316",
             "email": "mailto:ulises316@live.com.mx",
             "fork": "https://podcasters.spotify.com/pod/show/el-fork",

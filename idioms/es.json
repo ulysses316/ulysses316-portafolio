@@ -1,14 +1,15 @@
 {
-    "navbar" : {
-        "portafolio" : "Portafolio",
+    "navbar": {
+        "portafolio": "Portafolio",
         "blog": "Blog",
-        "contact": "Contacto",
-        "idiom": "en"
+        "about": "Sobre mi",
+        "idiom": "en",
+        "cv": "/cv-esp.pdf"
     },
     "hero": {
         "title": "Hola, Soy Ulysses316",
         "subtitle": "Desarrollador Web FullStack",
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dicta, amet eligendi quo quod atque officiis praesentium nihil tempora aliquid saepe ullam magnam fugiat blanditiis vitae aut earum nesciunt. Necessitatibus."
+        "text": "Web developer | GDG UNAM | Student | Music lover"
     },
     "articleSection": {
         "cta": "Ver todos los articulos"
@@ -16,13 +17,28 @@
     "repoSection": {
         "cta": "Ver todos los repositorios"
     },
+    "about": {
+        "title": "H. Ulises G.M",
+        "subtitle": "Desarrollador Web FullStack",
+        "firstText": "¡Hola! Soy H. Ulises G. M., un Desarrollador Web Fullstack e Instructor de Desarrollo Web. Desde 2019, he impartido talleres de desarrollo tanto para comunidades de programación como para empresas como EpicQueen, GDG UNAM, UTOPICODE, Laboratorio de Tecnologías el Rule, el Centro Cultural España, Instituto Tecnológico de La Laguna y el de Piedras Negras. Soy egresado de Ingeniería en Computación de la FES ARAGON UNAM.",
+        "secondText": "En cuanto a mis habilidades, cuento con experiencia en Backend utilizando Python con tecnologías como Flask y Django. En Frontend, tengo bases en Angular y actualmente estoy estudiando React y NextJS. También lidero comunidades de programación, donde creamos charlas para desarrolladores.",
+        "thirdText": "Si deseas contactarme abajo puedes encontrar el link a todas mis redes sociales y a mi correo."
+    },
+    "notFound": {
+        "title": "Pagina no encontrada",
+        "errorCode": 404
+    },
+    "error": {
+        "title": "Internal server error",
+        "errorCode": 500
+    },
     "footer": {
         "title": "Contactame",
         "text": "¿Tienes una fecha límite a la vista? Programe una llamada conmigo para discutir con más detalle. Alternativamente, conéctese conmigo en otro lugar de la web.",
         "social": {
-            "linkedin" : "https://www.linkedin.com/in/ulysses316/",
+            "linkedin": "https://www.linkedin.com/in/ulysses316/",
             "github": "https://github.com/ulysses316",
-            "email": "mailto:ulises316@live.com.mx", 
+            "email": "mailto:ulises316@live.com.mx",
             "fork": "https://podcasters.spotify.com/pod/show/el-fork",
             "junior": "https://podcasters.spotify.com/pod/show/un-podcast-junior"
         }

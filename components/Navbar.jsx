@@ -15,7 +15,7 @@ export default function Navbar() {
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5 p-1.5">
-                        <h5 className='text-primary-red dark:text-primary-purple font-bold'>H. Ulises G.M.</h5>
+                        <h5 className='text-primary-red dark:text-primary-purple font-bold font-serif'>H. Ulises G.M.</h5>
                     </a>
                 </div>
                 <div className="flex lg:hidden">
@@ -35,10 +35,10 @@ export default function Navbar() {
                     {/* <a href="#" className="text-sm font-semibold leading-6">
                         {idiom.navbar.blog}
                     </a> */}
-                    <Link href="/contact" className="text-sm font-semibold leading-6">
-                        {idiom.navbar.contact}
+                    <Link href="/about" className="text-sm font-semibold leading-6">
+                        {idiom.navbar.about}
                     </Link>
-                    <a href="#" className="text-sm font-semibold leading-6 uppercase">
+                    <a href={idiom.navbar.cv} target='_blank' className="text-sm font-semibold leading-6 uppercase">
                         cv
                     </a>
                     <p onClick={handdleIdiom} className="text-sm font-semibold leading-6 cursor-pointer uppercase">
@@ -57,7 +57,7 @@ export default function Navbar() {
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
-                            <h5 className='text-primary-red dark:text-primary-purple font-bold'>H. Ulises G.M.</h5>
+                            <h5 className='text-primary-red dark:text-primary-purple font-bold font-serif'>H. Ulises G.M.</h5>
                         </a>
                         <button
                             type="button"
