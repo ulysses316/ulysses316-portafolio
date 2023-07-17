@@ -14,9 +14,9 @@ export default function Navbar() {
         <header className="bg-transparent text-black dark:text-white shadow-lg">
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">
-                    <a href="/" className="-m-1.5 p-1.5">
+                    <Link href="/" className="-m-1.5 p-1.5">
                         <h5 className='text-primary-red dark:text-primary-purple font-bold font-serif'>H. Ulises G.M.</h5>
-                    </a>
+                    </Link>
                 </div>
                 <div className="flex lg:hidden">
                     <button

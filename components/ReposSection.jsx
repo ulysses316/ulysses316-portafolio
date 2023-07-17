@@ -10,16 +10,12 @@ export default function ReposSection() {
   const [loading, setLoading] = useState(true);
   const { idiom } = useContext(LanguageContext)
 
-  const repos = [
-    "https://api.github.com/repos/ulysses316/ulysses316-portafolio",
-    "https://api.github.com/repos/ulysses316/ulysses316-blog-2.0",
-    "https://api.github.com/repos/ulysses316/calculadora-dieta-nextjs",
-    "https://api.github.com/repos/ulysses316/django-todo",
+  const response = [
+    useFetch("https://api.github.com/repos/ulysses316/ulysses316-portafolio"),
+    useFetch("https://api.github.com/repos/ulysses316/ulysses316-blog-2.0"),
+    useFetch("https://api.github.com/repos/ulysses316/calculadora-dieta-nextjs"),
+    useFetch("https://api.github.com/repos/ulysses316/django-todo"),
   ]
-
-  const response = repos.map((url) => {
-    return useFetch(url)
-  })
 
   useEffect(() => {
     if (response.every((repo) => repo.data)) {
