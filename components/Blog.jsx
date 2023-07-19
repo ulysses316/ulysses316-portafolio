@@ -1,22 +1,42 @@
 import React from 'react'
 import Card from './common/Card'
 import Link from 'next/link'
+import { useState, useEffect } from 'react'
+
+import useFetch from '@/hooks/useFetch'
+import moment from 'moment'
 
 export default function Blog() {
+  
+  const articles = useFetch("http://localhost:3000/api/articles")
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (articles) {
+      setLoading(false);
+    }
+  }, [articles]);
+
   return (
     <section className='flex justify-center min-h-[74dvh] pt-6'>
       <div className='text-black dark:text-white max-w-[42rem]'>
         <h1 className='text-[60px] font-serif text-center'>Blog</h1>
-        <Link href="#">
-          <div className='mt-10'>
-            <Card>
-              <div className='flex items-center flex-col md:flex-row md:gap-2 mb-[16px]'>
-                <h2 className='text-primary-red dark:text-primary-purple font-bold text-[23px]'>The CSS mindset</h2><span className='font-bold'>⋅</span><time className='text-[14px] font-bold'>30 de Junio</time>
+        {loading ? (
+          <p>Loading...</p>
+        ) : (
+          articles.data.data.map((article) => (
+            <Link href={`/blog/${article.slug}`}>
+              <div className='mt-10'>
+                <Card>
+                  <div className='flex items-center flex-col md:flex-row md:gap-2 mb-[16px]'>
+                    <h2 className='text-primary-red dark:text-primary-purple font-bold text-[23px]'>{article.title}</h2><span className='font-bold'>⋅</span><time className='text-[14px] font-bold'>{moment(article.publishedAt).format('DD/MM/YYYY')}</time>
+                  </div>
+                  <p className='text-center md:text-left'>{article.description}</p>
+                </Card>
               </div>
-              <p className='text-center md:text-left'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo esse magni laborum aliquid nesciunt exercitationem unde hic dolore voluptas natus, quaerat, inventore similique voluptates quia amet quo placeat. Eius, ea?</p>
-            </Card>
-          </div>
-        </Link>
+            </Link>
+          ))
+        )}
       </div>
     </section>
   )
