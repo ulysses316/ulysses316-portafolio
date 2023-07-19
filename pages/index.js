@@ -27,8 +27,8 @@ export default function Home() {
       <Navbar />
       <MainLayout>
         <Hero />
-        {/* <ArticlesSection /> */}
         <ReposSection />
+        <ArticlesSection />
         <Footer />
       </MainLayout>
     </>

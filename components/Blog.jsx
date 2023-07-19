@@ -7,12 +7,12 @@ import useFetch from '@/hooks/useFetch'
 import moment from 'moment'
 
 export default function Blog() {
-  
+
   const articles = useFetch("http://localhost:3000/api/articles")
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (articles) {
+    if (articles.data) {
       setLoading(false);
     }
   }, [articles]);
