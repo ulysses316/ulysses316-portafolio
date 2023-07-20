@@ -4,8 +4,15 @@ import MainLayout from '@/components/common/MainLayout'
 import Footer from '@/components/Footer'
 import Article from '@/components/Article'
 import Head from 'next/head'
+import { useState, useEffect } from 'react'
+
+import { markdownToHtml } from '@/utils/articleHtml'
+
 
 export default function ArticlePage() {
+    const html = markdownToHtml("hello-world-deno-10-articulo-de-2020-5gdk");
+    console.log(html);
+    
     return (
         <>
             {/* <Head>

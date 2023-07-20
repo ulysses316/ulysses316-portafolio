@@ -1,4 +1,4 @@
-import unified from "unified"
+import { unified } from "unified"
 import parse from "remark-parse"
 import remarkHtml from "remark-html"
 import * as highlight from "remark-highlight.js"
@@ -26,7 +26,6 @@ export const convertMarkdownToHtml = markdown => {
     .use(gfm)
     .use(highlight)
     .use(remarkHtml)
-    .processSync(stripHtmlComments(content)).contents
-
-  return String(html)
+    .processSync(stripHtmlComments(content)).toString();
+  return html
 }
