@@ -10,23 +10,37 @@ import { markdownToHtml } from '@/utils/articleHtml'
 
 
 export default function ArticlePage() {
-    const html = markdownToHtml("hello-world-deno-10-articulo-de-2020-5gdk");
-    console.log(html);
-    
+    const [dataArticle, setDataArticle] = useState('');
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const articleHtml = await markdownToHtml(
+                    'hello-world-deno-10-articulo-de-2020-5gdk'
+                );
+                setDataArticle(articleHtml);
+            } catch (error) {
+                console.log(error);
+            }
+        };
+
+        fetchData();
+    }, []);
+
     return (
         <>
-            {/* <Head>
-                <title>About | ulysses316</title>
-                <meta name="description" content="Bienvenido a mi sitio web, donde podrá explorar mis habilidades, proyectos y logros en el desarrollo de software. no dude en ponerse en contacto conmigo para hablar sobre interesantes oportunidades y colaboraciones." />
+            <Head>
+                <title>{dataArticle.title} | ulysses316</title>
+                <meta name="description" content={dataArticle.description}/>
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="About | ulysses316" />
-                <meta property="og:description" content="Bienvenido a mi sitio web, donde podrá explorar mis habilidades, proyectos y logros en el desarrollo de software. no dude en ponerse en contacto conmigo para hablar sobre interesantes oportunidades y colaboraciones." />
-                <meta property="og:image" content="/me.jpg" />
-            </Head> */}
+                <meta property="og:title" content={`${dataArticle.description} | ulysses316`} />
+                <meta property="og:description" content={`${dataArticle.description}`} />
+                <meta property="og:image" content={`${dataArticle.cover}`} />            
+            </Head>
 
             <Navbar />
             <MainLayout>
-                <Article />
+                <Article data={dataArticle} />
                 <Footer />
             </MainLayout>
         </>

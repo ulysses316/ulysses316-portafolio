@@ -12,7 +12,14 @@ export const markdownToHtml = async (slug) => {
         const data = await response.json();
         const markdown = sanitizeDevToMarkdown(data.body_markdown)
         const html = convertMarkdownToHtml(markdown)
-        return html
+        return {
+            html: html,
+            title: data.title,
+            description: data.description,
+            url: data.url,
+            date: data.published_timestamp,
+            cover: data.cover_image
+        }
         
     } catch (error) {
         console.log(error);
