@@ -20,16 +20,14 @@ export default function ArticlePage() {
             try {
                 const articleHtml = await markdownToHtml(currentUrl);
                 setDataArticle(articleHtml);
+                setLoading(false);
             } catch (error) {
                 console.log(error);
+                setLoading(false);
             }
         };
         fetchData();
     }, []);
-
-    useEffect(() => {
-        setLoading(!loading)
-    }, [dataArticle]);
 
     return (
         <>
