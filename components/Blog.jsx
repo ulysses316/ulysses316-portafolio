@@ -8,7 +8,7 @@ import moment from 'moment'
 
 export default function Blog() {
 
-  const articles = useFetch("http://localhost:3000/api/articles")
+  const articles = useFetch("https://www.ulysses316.com/api/articles")
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

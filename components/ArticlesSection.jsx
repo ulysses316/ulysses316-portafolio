@@ -12,7 +12,7 @@ export default function ArticlesSection() {
 
   const { idiom } = useContext(LanguageContext)
 
-  const articles = useFetch("http://localhost:3000/api/articles")
+  const articles = useFetch("https://www.ulysses316.com/api/articles")
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
