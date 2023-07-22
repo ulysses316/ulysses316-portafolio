@@ -24,8 +24,8 @@ export default function Blog() {
         {loading ? (
           <p>Loading...</p>
         ) : (
-          articles.data.data.map((article) => (
-            <Link href={`/blog/${article.slug}`}>
+          articles.data.data.map((article, index) => (
+            <Link key={index} href={`/blog/${article.slug}`}>
               <div className='mt-10'>
                 <Card>
                   <div className='flex items-center flex-col md:flex-row md:gap-2 mb-[16px]'>

@@ -28,8 +28,9 @@ export default function ArticlesSection() {
         {loading ? (
           <p>Loading...</p>
         ) : (
-          articles.data.data.map((article)=>(
+          articles.data.data.map((article, index)=>(
             <CardArtitle
+              key={index}
               title={article.title}
               description={article.description}
               date={moment(article.publishedAt).format('DD/MM/YYYY')}
