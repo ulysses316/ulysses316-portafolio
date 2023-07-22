@@ -32,9 +32,9 @@ export default function Navbar() {
                     {/* <Link href="/prueba" className="text-sm font-semibold leading-6">
                         {idiom.navbar.portafolio}
                     </Link> */}
-                    {/* <a href="#" className="text-sm font-semibold leading-6">
+                    <Link href="/blog" className="text-sm font-semibold leading-6">
                         {idiom.navbar.blog}
-                    </a> */}
+                    </Link>
                     <Link href="/about" className="text-sm font-semibold leading-6">
                         {idiom.navbar.about}
                     </Link>
@@ -76,12 +76,12 @@ export default function Navbar() {
                                 >
                                     {idiom.navbar.portafolio}
                                 </a> */}
-                                {/* <a
-                                    href="#"
+                                <Link
+                                    href="/blog"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7"
                                 >
                                     {idiom.navbar.blog}
-                                </a> */}
+                                </Link>
                                 <Link
                                     href="/about"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7"

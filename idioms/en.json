@@ -24,6 +24,9 @@
         "secondText": "Regarding my skills, I have experience in Backend development using Python with technologies like Flask and Django. In Frontend, I have a foundation in Angular, and currently, I am studying React and NextJS. Additionally, I lead programming communities where we organize talks for developers.",
         "thirdText": "If you wish to contact me, below you can find links to all my social media profiles and my email"
     },
+    "article": {
+        "devtoCTA": "React, comment and follow on"
+    },
     "notFound": {
         "title": "Page not found",
         "errorCode": 404
