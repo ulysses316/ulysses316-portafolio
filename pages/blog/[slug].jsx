@@ -24,7 +24,6 @@ export default function ArticlePage() {
                 console.log(error);
             }
         };
-
         fetchData();
     }, []);
 
