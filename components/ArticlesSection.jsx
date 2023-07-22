@@ -39,6 +39,7 @@ export default function ArticlesSection() {
             />
           ))
         )}
+        
       </div>
       <div className='flex justify-end'>
         <Link className='text-primary-red dark:text-primary-purple font-bold text-lg' href={"/blog"}>{idiom.articleSection.cta}</Link>
