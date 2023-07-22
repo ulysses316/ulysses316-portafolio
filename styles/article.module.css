@@ -100,16 +100,25 @@
 }
 
 .article-body pre {
-    display: block;
-    font-family: monospace;
-    white-space: pre;
-    margin: 1em 0;
+    white-space: pre-wrap;
+    max-width: 100%;
+    height: auto;
+    font-size: 16px;
 }
 
 .article-body code {
-    display: block;
-    overflow-x: auto;
-    white-space: pre;
-    font-size: 14px;
+    font-size: 16px;
+    white-space: pre-wrap;
     max-width: 100%;
-  }
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .article-body pre {
+        font-size: 11px;
+    }
+
+    .article-body code {
+        font-size: 11px;
+    }
+}
