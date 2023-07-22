@@ -19,7 +19,7 @@ export default function Article({ data }) {
                     <div className={styles['article-body']} dangerouslySetInnerHTML={{ __html: data.html }} />
                     {/* Article body */}
 
-                    <a className='flex flex-col items-center' target='_blank' href={data.url}>
+                    <a className='flex flex-col items-center hover:text-primary-red dark:hover:text-primary-purple' target='_blank' href={data.url}>
                         <p className='text-[20px] font-bold my-[16px]'>{idiom.article.devtoCTA}</p>
                         <svg
                             stroke="currentColor"

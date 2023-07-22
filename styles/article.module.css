@@ -105,3 +105,11 @@
     white-space: pre;
     margin: 1em 0;
 }
+
+.article-body code {
+    display: block;
+    overflow-x: auto;
+    white-space: pre;
+    font-size: 14px;
+    max-width: 100%;
+  }
