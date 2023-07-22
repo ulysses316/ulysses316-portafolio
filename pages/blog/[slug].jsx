@@ -28,7 +28,7 @@ export default function ArticlePage() {
         };
         fetchData();
     }, []);
-
+    
     return (
         <>
             <Head>
